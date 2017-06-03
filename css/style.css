@@ -1,0 +1,109 @@
+/* 00. Basic Styling
+-------------------------*/
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+body {font: 13px Helmet, Freesans, sans-serif;}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333;}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* 01. Primary Nav
+-------------------------*/
+nav {
+  position: fixed;
+  left: 30px;
+  top: 30px;
+  overflow: hidden;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+nav ul {
+  color: #444444;
+  text-align: center;
+  line-height: 50px;
+}
+nav ul li {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  opacity: 1;
+  margin-bottom: 1px;
+  cursor: pointer;
+  font: 400 16px/50px 'Lato', sans-serif;
+}
+nav ul li:hover {
+  background: #ffffff;
+  opacity: 0.8;
+}
+nav ul li:active {
+  background: #ffffff;
+  opacity: 0.5;
+}
+
+/* 02. Sections
+-------------------------*/
+section {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+section p {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: #ffffff;
+  font: 400 48px/50px 'Lato', sans-serif;
+}
+#section1 {
+  background-color: #2682d5;
+}
+#section2 {
+  background-color: #33cbe0;
+}
+#section3 {
+  background-color: #dc3964;
+}
+#section4 {
+  background-color: #ec7547;
+}
+#section5 {
+  background-color: #ffd728;
+}
+
+
+/* 07. Footer
+-------------------------*/
